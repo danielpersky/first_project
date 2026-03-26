@@ -1,32 +1,49 @@
 ---
-import Layout from '../layouts/Layout.astro';
+const pageTitle = "About Me";
+const identity = {
+  firstName: "Daniel",
+  country: "Persky",
+  occupation: "Onboarding Specialist",
+  hobbies: ["photography", "birdwatching", "baseball"],
+};
+
+const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
+const happy = true;
+const finished = false;
+const goal = 3;
 ---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+      <title>{pageTitle}</title>
+  </head>
+  <body>
+    <a href="/">Home</a>
+    <a href="/about/">About</a>
+    <a href="/blog/">Blog</a>
+    <h1>{pageTitle}</h1>
+    <h2>... and my new Astro site!</h2>
 
-<Layout title="About - Daniel Persky">
-    <main>
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/blog/">Blog</a>
-        <h1>About Me</h1>
-        <p>Hi! I'm <strong>Daniel Persky</strong>, a developer based in <strong>Tel Aviv</strong>.</p>
-        <p>Welcome to my site. Feel free to explore my work and get in touch!</p>
-    </main>
-</Layout>
+    <p>I am working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I built myself!</p>
 
-<style>
-    main {
-        margin: 0 auto;
-        padding: 1rem;
-        max-width: 600px;
-    }
+    <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
+    <p>Here are a few facts about me:</p>
+<ul>
+  <li>My name is {identity.firstName}.</li>
+  <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
+  {identity.hobbies.length >= 2 &&
+    <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
+  }
+</ul>
+<p>My skills are:</p>
+<ul>
+  {skills.map((skill) => <li>{skill}</li>)}
+</ul>
+{happy && <p>I am happy to be learning Astro!</p>}
 
-    h1 {
-        font-size: 2rem;
-        margin-bottom: 1rem;
-    }
+{finished && <p>I finished this tutorial!</p>}
 
-    p {
-        line-height: 1.6;
-        margin-bottom: 1rem;
-    }
-</style>
+{goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
+  </body>
+</html>
