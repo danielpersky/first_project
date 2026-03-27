@@ -12,14 +12,11 @@ tags: ["astro", "blogging", "learning in public"]
 
 ## What I've accomplished
 
-1. 
-
-2. 
-
-3. 
+1. Created new .astro components in src/components/
+2. Imported and used Astro componennts inside other Astro components
+3. Used props 
 
 ## What's next
 
-* 
-*  
-* 
+* Dive into Props!
+* Create Header
