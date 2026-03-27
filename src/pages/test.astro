@@ -1,12 +1,10 @@
-<html>
-  <head>
-    <title>Test Page</title>
-  </head>
-  <body>
-    <h1>This is a test page</h1>
-    <p>Welcome to the test page. This is where you can test your Astro components.</p>
-  </body>
-
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "Test Page";
+---
+<BaseLayout pageTitle={pageTitle}>
+  <p>This is where you can test your Astro components.</p>
+</BaseLayout>
 
 
 
