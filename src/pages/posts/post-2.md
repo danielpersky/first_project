@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/MarkdownPostLayout.astro
 title: 'My Second Blog Post'
 pubDate: 2026-03-27
 description: 'This is the second post of my new Astro blog.'
@@ -8,9 +9,6 @@ image:
     alt: 'The Astro logo on a dark background with a pink glow.'
 tags: ["astro", "blogging", "learning in public"]
 ---
-# My Second Blog Post
-
-Published on: 2026-03-27
 
 ## What I've accomplished
 
@@ -23,5 +21,7 @@ Published on: 2026-03-27
 ## What's next
 
 * Building components
+
 * Get back to JSX syntax 
+
 * Get back to CSS variable
