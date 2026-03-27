@@ -19,4 +19,4 @@ tags: ["astro", "blogging", "learning in public"]
 ## What's next
 
 * Dive into Props!
-* Create Header
+* Create Headernp
