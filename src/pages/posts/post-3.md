@@ -10,5 +10,16 @@ tags: ["astro", "blogging", "learning in public"]
 ---
 # My Third Blog Post
 
-Published on: 2026-03-27
+## What I've accomplished
 
+1. 
+
+2. 
+
+3. 
+
+## What's next
+
+* 
+*  
+* 

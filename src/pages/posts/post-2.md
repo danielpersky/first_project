@@ -12,3 +12,16 @@ tags: ["astro", "blogging", "learning in public"]
 
 Published on: 2026-03-27
 
+## What I've accomplished
+
+1. **Added styles**: Both locally and globally
+
+2. **Navigation**: Website has navigation between pages
+
+3. **Dynamic content**: Learnt to add dynamic content via frontmatter
+
+## What's next
+
+* Building components
+* Get back to JSX syntax 
+* Get back to CSS variable
