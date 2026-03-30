@@ -98,4 +98,22 @@ h1 {
   }
 }
 
-  
+  .greeting-button {
+     background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  }
+
+
+
+.greeting-button:hover {
+  background-color: #1d4ed8;
+}
+
+.greeting-button:active {
+  transform: scale(0.98);
+}
